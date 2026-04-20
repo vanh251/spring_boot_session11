@@ -1,4 +1,9 @@
 package ra.edu.repository;
 
-public interface PatientRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import ra.edu.entity.Patient;
+
+@Repository
+public interface PatientRepository extends JpaRepository<Patient, Long> {
 }
